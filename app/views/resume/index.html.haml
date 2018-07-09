@@ -1,341 +1,318 @@
-// Header
-.banner-agile
-  .logo-w3layouts
-    %h1
-      %a{:href => "index.html"} Personal Resume
-  .container
-    .banner-info-w3l
-      %h3 Lorem ipsum
-      %h2 Hi,I am Nicholas James
-      %h4
-        %a.scroll{:href => "#about"} About Me
-.nav-agile
-  .container
-    // Navigation
-    %nav.navbar.navbar-default
-      // Brand and toggle get grouped for better mobile display
-      .navbar-header
-        %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
-          %span.sr-only Toggle navigation
-          %span.icon-bar
-          %span.icon-bar
-          %span.icon-bar
-      // Collect the nav links, forms, and other content for toggling
-      #bs-example-navbar-collapse-1.collapse.navbar-collapse
-        %ul.nav.navbar-nav.navbar-right.margin-top.cl-effect-2
-          %li
-            %a.scroll2{:href => "index.html"}
-              %span{"data-hover" => "Home"} Home
-          %li
-            %a.scroll{:href => "#about"}
-              %span{"data-hover" => "About"} About
-          %li
-            %a.scroll{:href => "#skills"}
-              %span{"data-hover" => "Skills"} Skills
-          %li
-            %a.scroll{:href => "#experience"}
-              %span{"data-hover" => "Experience"} Experience
-          %li
-            %a.scroll{:href => "#portfolio"}
-              %span{"data-hover" => "Projects"} Projects
-          %li
-            %a.scroll{:href => "#contact"}
-              %span{"data-hover" => "Contact"} Contact
-        .clearfix
-      //.navbar-collapse
-      .clearfix
-//Navigation
-//Header
-// main-section-starts-here
-// About-starts-here
-#about.about
-  .container
-    %h3.w3l_head About Me
-    .w3l-grids-about
-      .col-md-5.w3ls-ab-right
-        .agile-about-right-img
-          %img{:alt => "", :src => "#{asset_path('ab.jpg')}"}/
-      .col-md-7.w3ls-agile-left
-        .w3ls-agile-left-info
-          .wel-left.animated.wow.fadeInLeft{"data-wow-delay" => ".5s"}
-            .icon-w3l
-              %i.hovicon.effect-2.sub-a
-                %span.glyphicon.glyphicon-leaf{"aria-hidden" => "true"}
-            .text-w3l
-              %h4 WEB DEVELOPER
-              %p Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin ultricies vestibulum velit.Lorem ipsum dolor sit amet.
-            .clearfix
-        .w3ls-agile-left-info
-          .wel-left.animated.wow.fadeInLeft{"data-wow-delay" => ".5s"}
-            .icon-w3l
-              %i.hovicon.effect-2.sub-a
-                %span.glyphicon.glyphicon-tree-deciduous{"aria-hidden" => "true"}
-            .text-w3l
-              %h4 GRAPHIC DESIGNER
-              %p Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin ultricies vestibulum velit.Lorem ipsum dolor sit amet.
-            .clearfix
-        .w3ls-agile-left-info
-          .wel-left.animated.wow.fadeInLeft{"data-wow-delay" => ".5s"}
-            .icon-w3l
-              %i.hovicon.effect-2.sub-a
-                %span.glyphicon.glyphicon-star{"aria-hidden" => "true"}
-            .text-w3l
-              %h4 UI/UK DEVELOPER
-              %p Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin ultricies vestibulum velit.Lorem ipsum dolor sit amet.
-            .clearfix
-        .w3ls-agile-left-info
-          .wel-left.animated.wow.fadeInLeft{"data-wow-delay" => ".5s"}
-            .icon-w3l
-              %i.hovicon.effect-2.sub-a
-                %span.glyphicon.glyphicon-cog{"aria-hidden" => "true"}
-            .text-w3l
-              %h4 MULTIMEDIA
-              %p Lorem ipsum dolor sit amet, consectetur adipisc elit. Proin ultricies vestibulum velit.Lorem ipsum dolor sit amet.
-            .clearfix
-      .clearfix
-//About-ends-here
-// Skills-starts-here
-#skills.wthreeskills
-  .container-fluid
-    %h3 MY SKILLS
-    .wthreeskills-grids
-      .col-md-6.wthreeskills-grid.wthreeskills-grid-2
-        %h4 TECHNICAL SKILLS
-        .bar_group
-          .bar_group__bar.thin{:label => "PHP DESIGN", :show_values => "true", :tooltip => "true", :value => "75"}
-          .bar_group__bar.thin{:label => "CSS3", :show_values => "true", :tooltip => "true", :value => "82"}
-          .bar_group__bar.thin{:label => "HTML", :show_values => "true", :tooltip => "true", :value => "95"}
-          .bar_group__bar.thin{:label => "JAVA SCRIPT", :show_values => "true", :tooltip => "true", :value => "86"}
-          .bar_group__bar.thin{:label => "PHOTOSHOP", :show_values => "true", :tooltip => "true", :value => "76"}
-      .col-md-6.wthreeskills-grid.wthreeskills-grid-1
-        %h4 PROFESSIONAL SKILLS
-        / Tabs
-        .tabs
-          .sap_tabs
-            #horizontalTab{:style => "display: block; width: 100%; margin: 0px;"}
-              %ul.resp-tabs-list
-                %li.resp-tab-item
-                  %span My Skill 1
-                %li.resp-tab-item
-                  %span My Skill 2
-                %li.resp-tab-item
-                  %span My Skill 3
-              .resp-tabs-container
-                .tab-1.resp-tab-content
-                  %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                  .w3lsstatsaits-info
-                    .col-md-4.w3lsstatsaits-grid.w3lsstatsaits-grid-1
-                      .w3lsstatsaitsstats.counter{"data-delay" => ".5", "data-increment" => "4", "data-max" => "9000", "data-min" => "0", "data-slno" => "1"} 7000
-                      %p Lorem
-                    .col-md-4.w3lsstatsaits-grid.w3lsstatsaits-grid-2
-                      .w3lsstatsaitsstats.counter{"data-delay" => "8", "data-increment" => "1", "data-max" => "17000", "data-min" => "0", "data-slno" => "1"} 16000
-                      %p Ipsum
-                    .col-md-4.w3lsstatsaits-grid.w3lsstatsaits-grid-3
-                      .w3lsstatsaitsstats.counter{"data-delay" => ".5", "data-increment" => "11", "data-max" => "12000", "data-min" => "0", "data-slno" => "1"} 12000
-                      %p Dolores
-                    .clearfix
-                .tab-2.resp-tab-content
-                  %p Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word.
-                  .w3lsstatsaits-info
-                    .col-md-4.w3lsstatsaits-grid.w3lsstatsaits-grid-1
-                      .w3lsstatsaitsstats.counter{"data-delay" => ".5", "data-increment" => "4", "data-max" => "9000", "data-min" => "0", "data-slno" => "1"} 16000
-                      %p Sitamet
-                    .col-md-4.w3lsstatsaits-grid.w3lsstatsaits-grid-2
-                      .w3lsstatsaitsstats.counter{"data-delay" => "8", "data-increment" => "1", "data-max" => "17000", "data-min" => "0", "data-slno" => "1"} 10000
-                      %p Consect
-                    .col-md-4.w3lsstatsaits-grid.w3lsstatsaits-grid-3
-                      .w3lsstatsaitsstats.counter{"data-delay" => ".5", "data-increment" => "11", "data-max" => "12000", "data-min" => "0", "data-slno" => "1"} 12000
-                      %p Teturs
-                    .clearfix
-                .tab-3.resp-tab-content
-                  %p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use.
-                  .w3lsstatsaits-info
-                    .col-md-4.w3lsstatsaits-grid.w3lsstatsaits-grid-1
-                      .w3lsstatsaitsstats.counter{"data-delay" => ".5", "data-increment" => "4", "data-max" => "9000", "data-min" => "0", "data-slno" => "1"} 8000
-                      %p Adipisce
-                    .col-md-4.w3lsstatsaits-grid.w3lsstatsaits-grid-2
-                      .w3lsstatsaitsstats.counter{"data-delay" => "8", "data-increment" => "1", "data-max" => "17000", "data-min" => "0", "data-slno" => "1"} 7000
-                      %p Elitsed
-                    .col-md-4.w3lsstatsaits-grid.w3lsstatsaits-grid-3
-                      .w3lsstatsaitsstats.counter{"data-delay" => ".5", "data-increment" => "11", "data-max" => "12000", "data-min" => "0", "data-slno" => "1"} 1400
-                      %p Eiusmod
-                    .clearfix
-        //Tabs
-      .clearfix
-//Skills-ends-here
-// services-starts-here
-#service.services
-  .container
-    %h3.agileits-title MY INTERESTS
-    .services-w3ls-row
-      .col-md-3.services-grids
-        .w3agile-servs-img
-          .icon-holder
-            %span.glyphicon.glyphicon-queen{"aria-hidden" => "true"}
-          %h4.mission Sports
-          %p.description Scelerisque Praesent
-      .col-md-3.services-grids
-        .w3agile-servs-img
-          .icon-holder
-            %span.fa.fa-gears.icon{"aria-hidden" => "true"}
-          %h4.mission Article
-          %p.description Scelerisque Praesent
-      .col-md-3.services-grids
-        .w3agile-servs-img
-          .icon-holder
-            %span.glyphicon.glyphicon-leaf{"aria-hidden" => "true"}
-          %h4.mission Web Design
-          %p.description Scelerisque Praesent
-      .col-md-3.services-grids
-        .w3agile-servs-img
-          .icon-holder
-            %span.glyphicon.glyphicon-headphones{"aria-hidden" => "true"}
-          %h4.mission Music
-          %p.description Scelerisque Praesent
-      .clearfix
-//services-ends-here
-// Experience-starts-here
-#experience.aitsresumewthree
-  .container
-    .aitsresumewthree-tag
-      %h3.title MY EXPERIENCE
-    .load_more
-      %ul#myList
-        %li.aitsaitsresumewthreeli-1
-          .l_g
-            .l_g_r.g_r
-              .work
-                .work-info
-                  .col-md-6.work-grid.work-left
-                    %h4 2012 - 2016
-                  .col-md-6.work-grid.work-right
-                    %h5 Company 3
-                    %p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
-                  .clearfix
-                .work-info
-                  .col-md-6.work-grid.work-right.work-right2
-                    %h4 2011 - 2012
-                  .col-md-6.work-grid.work-left.work-left2
-                    %h5 Company 2
-                    %p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
-                  .clearfix
-                .work-info
-                  .col-md-6.work-grid.work-left
-                    %h4 2009 - 2011
-                  .col-md-6.work-grid.work-right
-                    %h5.comp Company 1
-                    %p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
-                  .clearfix
-        %li
-          .l_g
-            .l_g_r.g_r
-              .work
-                %h4.title.title2 EDUCATION
-                .work-info
-                  .col-md-6.work-grid.work-left
-                    %h4 2007-2009
-                  .col-md-6.work-grid.work-right
-                    %h5.univ Post Graduate
-                    %p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
-                  .clearfix
-                .work-info
-                  .col-md-6.work-grid.work-right.work-right2
-                    %h4 2003-2007
-                  .col-md-6.work-grid.work-left.work-left2
-                    %h5 Graduate
-                    %p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
-                  .clearfix
-                .work-info
-                  .col-md-6.work-grid.work-left
-                    %h4 1994-2003
-                  .col-md-6.work-grid.work-right
-                    %h5.sch School
-                    %p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
-                  .clearfix
-      #loadMore.wow.fadeInUp
-        Show More
-        %i.fa.fa-chevron-down{"aria-hidden" => "true"}
-      #showLess.wow.fadeInDown
-        Show Less
-        %i.fa.fa-chevron-up{"aria-hidden" => "true"}
-//Experience-ends-here
-// Portfolio-starts-here
-#portfolio.portfolio
-  .container
-    %h3.agile-title My Projects
-    .gallery_gds
-      .filtr-container
-        .col-md-3.filtr-item{"data-category" => "1, 4", "data-sort" => "Busy streets"}
-          .agileits-img
-            %a.swipebox{:href => "assets/g55.jpg", :title => "My Project"}
-              %img.img-responsive.img-style.row2{:alt => "", :src => "#{asset_path('g5.jpg')}"}/ 
-          .agileits-img
-            %a.swipebox{:href => "assets/g33.jpg", :title => "My Project"}
-              %img.img-responsive.img-style.row2{:alt => "", :src => "#{asset_path('g3.jpg')}"}/ 
-        .col-md-6.filtr-item{"data-category" => "2, 3", "data-sort" => "Luminous night"}
-          %a.swipebox{:href => "assets/g11.jpg", :title => "My Project"}
-            %img.img-responsive.img-style.row2{:alt => "", :src => "#{asset_path('g1.jpg')}"}/
-          .col-md-6.agileits-img.g2
-            %a.swipebox{:href => "assets/g88.jpg", :title => "My Project"}
-              %img.img-responsive.img-style.row2{:alt => "", :src => "#{asset_path('pro8.jpg')}"}/
-          .col-md-6.agileits-img.g4
-            %a.swipebox{:href => "assets/g77.jpg", :title => "My Project"}
-              %img.img-responsive.img-style.row2{:alt => "", :src => "#{asset_path('pro6.jpg')}"}/
-          .clearfix
-          %a.swipebox{:href => "assets/g22.jpg", :title => "My Project"}
-            %img.img-responsive.img-style.row2{:alt => "", :src => "#{asset_path('g2.jpg')}"}/
-        .col-md-3.filtr-item{"data-category" => "1, 4", "data-sort" => "Busy streets"}
-          .agileits-img
-            %a.swipebox{:href => "assets/g44.jpg", :title => "My Project"}
-              %img.img-responsive.img-style.row2{:alt => "", :src => "#{asset_path('g4.jpg')}"}/
-          .agileits-img
-            %a.swipebox{:href => "assets/g66.jpg", :title => "My Project"}
-              %img.img-responsive.img-style.row2{:alt => "", :src => "#{asset_path('g6.jpg')}"}/
-        .clearfix
-// Portfolio-ends-here
-// contact-starts-here
-#contact.contact
-  %h3.agile-contact Contact Me
-  .contact-agile
-    .map
-      %iframe{:src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387142.84008838347!2d-74.25818880297903!3d40.705831640339994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1465278069158"}
-    .contact-left-agile
-      %h4 About Me
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      .add-w3ls-main
-        %span.glyphicon.glyphicon-map-marker{"aria-hidden" => "true"}
-        .add-w3ls2
-          %h5 Location
-          %p 738 Diamond Road, New York City
-        .clearfix
-      .add-w3ls-main
-        %span.glyphicon.glyphicon-envelope{"aria-hidden" => "true"}
-        .add-w3ls2
-          %h5 Email
-          %p
-            %a{:href => "mailto:info@example.com"} mail@example.com
-        .clearfix
-      .add-w3ls-main
-        %span.glyphicon.glyphicon-earphone{"aria-hidden" => "true"}
-        .add-w3ls2
-          %h5 Call Me
-          %p +12 5842 544 976
-        .clearfix
-    .contact-right-w3l
-      .contact-form
-        %form{:action => "#", :method => "post"}
-          %input{:name => "Name", :placeholder => "NAME", :required => "", :type => "text"}/
-          %input{:name => "Name", :placeholder => "LASTNAME", :required => "", :type => "text"}/
-          %input{:name => "Email", :placeholder => "E-MAIL", :required => "", :type => "email"}/
-          %textarea{:placeholder => "TYPE YOUR MESSAGE......", :required => ""}
-          %input{:name => "login", :type => "submit", :value => "Submit"}/
-    .clearfix
-//contact-ends-here
-//copyright-starts-here
-.copy-section
-  .container
-    .footer-top
-      %p
-        © 2017 Personal Resume. All rights reserved | Design by
-        %a{:href => "http://w3layouts.com"} W3layouts
-// copyright-ends-here
+#main-wrapper
+  / Page Preloader
+  #preloader
+    #status
+      .status-mes
+  .columns-block.container
+    .left-col-block.blocks
+      %header.header.theiaStickySidebar
+        .profile-img
+          %img.img-responsive.w-100{:alt => "", :src => "#{asset_path('profile.jpg')}"}/ 
+        .content
+          %h1 Leon Weiß
+          %span.lead Marketing Consultant
+          .about-text
+            %p
+              Credibly embrace visionary internal or "organic" sources and business benefits. Collaboratively
+              integrate efficient portals rather than customized customer service. Assertively deliver
+              frictionless services via leveraged interfaces. Conveniently evisculate accurate sources and
+              process-centric expertise.
+            %p Energistically fabricate customized imperatives through cooperative catalysts for change.
+            %p
+              %img.img-responsive{:alt => "", :src => "#{asset_path('signature.png')}"}/
+          %ul.social-icon
+            %li
+              %a{:href => "#"}
+                %i.fa.fa-facebook{"aria-hidden" => "true"}
+            %li
+              %a{:href => "#"}
+                %i.fa.fa-twitter{"aria-hidden" => "true"}
+            %li
+              %a{:href => "#"}
+                %i.fa.fa-linkedin{"aria-hidden" => "true"}
+            %li
+              %a{:href => "#"}
+                %i.fa.fa-slack{"aria-hidden" => "true"}
+            %li
+              %a{:href => "#"}
+                %i.fa.fa-dribbble{"aria-hidden" => "true"}
+      / .header
+    / .left-col-block
+    .right-col-block.blocks
+      .theiaStickySidebar
+        %section.expertise-wrapper.section-wrapper.gray-bg
+          .container-fluid
+            .row
+              .col-md-12
+                .section-title
+                  %h2 Expertise
+            / .row
+            .row
+              .col-md-6
+                .expertise-item
+                  %h3 Professionally drive
+                  %p
+                    Synergistically strategize customer directed resources rather than principle.
+              .col-md-6
+                .expertise-item
+                  %h3 Seamlessly leverage
+                  %p
+                    Quickly repurpose reliable customer service with orthogonal ideas. Competently.
+            .row
+              .col-md-6
+                .expertise-item
+                  %h3 Interactively incubate
+                  %p
+                    Interactively myocardinate high standards in initiatives rather than next-generation.
+              .col-md-6
+                .expertise-item
+                  %h3 Globally streamline
+                  %p
+                    Dynamically initiate client-based convergence vis-a-vis performance based.
+        / .expertise-wrapper
+        %section.section-wrapper.skills-wrapper
+          .container-fluid
+            .row
+              .col-md-12
+                .section-title
+                  %h2 Skills
+            .row
+              .col-md-12
+                .progress-wrapper
+                  .progress-item
+                    %span.progress-title Marketing
+                    .progress
+                      .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 62%"}
+                        %span.progress-percent 62%
+                    / .progress
+                  / .skill-progress
+                  .progress-item
+                    %span.progress-title Market Research
+                    .progress
+                      .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "90", :role => "progressbar", :style => "width: 90%"}
+                        %span.progress-percent 90%
+                    / /.progress
+                  / /.skill-progress
+                  .progress-item
+                    %span.progress-title Organisational Skills
+                    .progress
+                      .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "75", :role => "progressbar", :style => "width: 75%;"}
+                        %span.progress-percent 75%
+                    / /.progress
+                  / /.skill-progress
+                  .progress-item
+                    %span.progress-title Communtcation Skills
+                    .progress
+                      .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "55", :role => "progressbar", :style => "width: 55%;"}
+                        %span.progress-percent 55%
+                    / /.progress
+                  / /.skill-progress
+                  .progress-item
+                    %span.progress-title Project Management
+                    .progress
+                      .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "55", :role => "progressbar", :style => "width: 80%;"}
+                        %span.progress-percent 80%
+                    / .progress
+                  / .skill-progress
+                / /.progress-wrapper
+            / .row
+          / .container-fluid
+        / .skills-wrapper
+        %section.section-wrapper.section-experience.gray-bg
+          .container-fluid
+            .row
+              .col-md-12
+                .section-title
+                  %h2 Work Experience
+            / .row
+            .row
+              .col-md-12
+                .content-item
+                  %small 2015 - Present
+                  %h3 Head of market research
+                  %h4 Computer &amp; Motor Ltd.
+                  %p United Kingdom, London
+                / .experience-item
+                .content-item
+                  %small 2012 - 2015
+                  %h3 Media Analyst
+                  %h4 BizzNiss
+                  %p United Kingdom, London
+                / .experience-item
+                .content-item
+                  %small 2010 - 2012
+                  %h3 Budget Administrator
+                  %h4 Somsom LLC
+                  %p United Kingdom, London
+                / .experience-item
+            / .row
+          / .container-fluid
+        / .section-experience
+        %section.section-wrapper.section-education
+          .container-fluid
+            .row
+              .col-md-12
+                .section-title
+                  %h2 Education
+            / .row
+            .row
+              .col-md-12
+                .content-item
+                  %small 2010 - 2012
+                  %h3 MA Product Design
+                  %h4 University of California
+                  %p United Kingdom, London
+                / .experience-item
+                .content-item
+                  %small 2007 - 2010
+                  %h3 Business marketing course
+                  %h4 Royal Academy of Business
+                  %p United Kingdom, London
+                / .experience-item
+                .content-item
+                  %small 2002 - 2006
+                  %h3 BA (Hons) Design
+                  %h4 University of Michigan
+                  %p United Kingdom, London
+                / .experience-item
+            / .row
+          / .container-fluid
+        / .section-education
+        %section.section-wrapper.section-interest.gray-bg
+          .container-fluid
+            .row
+              .col-md-12
+                .section-title
+                  %h2 Interest
+            / .row
+            .row
+              .col-md-12
+                .content-item
+                  %h3 Books
+                  %p
+                    Proactively extend market-driven e-tailers rather than enterprise-wide supply chains.
+                    Collaboratively embrace 24/7 processes rather than adaptive users. Seamlessly monetize
+                    alternative e-business.
+                .content-item
+                  %h3 Sports
+                  %p
+                    Assertively grow optimal methodologies after viral technologies. Appropriately develop
+                    frictionless technology for adaptive functionalities. Competently iterate functionalized
+                    networks for best-of-breed services.
+                .content-item
+                  %h3 Art
+                  %p
+                    Dramatically utilize superior infomediaries whereas functional core competencies.
+                    Enthusiastically repurpose synergistic vortals for customer directed portals. Interactively
+                    pursue sustainable leadership via.
+            / .row
+        / .section-publications
+        %section.section-wrapper.portfolio-section
+          .container-fluid
+            .row
+              .col-md-12
+                .section-title
+                  %h2 Portfolio
+            .row
+              .col-md-6
+                %a.portfolio-item{:href => "#"}
+                  .portfolio-thumb
+                    %img{:alt => "", :src => "#{asset_path('portfolio-1.jpg')}"}/
+                  .portfolio-info
+                    %h3 Creative concepts
+                    %small domain.com
+                  / portfolio-info
+                / .portfolio-item
+              .col-md-6
+                %a.portfolio-item{:href => "#"}
+                  .portfolio-thumb
+                    %img{:alt => "", :src => "#{asset_path('portfolio-2.jpg')}"}/
+                  .portfolio-info
+                    %h3 Customer focused
+                    %small domain.com
+                  / portfolio-info
+                / .portfolio-item
+              .col-md-6
+                %a.portfolio-item{:href => "#"}
+                  .portfolio-thumb
+                    %img{:alt => "", :src => "#{asset_path('portfolio-3.jpg')}"}/
+                  .portfolio-info
+                    %h3 Management methodology
+                    %small domain.com
+                  / portfolio-info
+                / .portfolio-item
+              .col-md-6
+                %a.portfolio-item{:href => "#"}
+                  .portfolio-thumb
+                    %img{:alt => "", :src => "#{asset_path('portfolio-4.jpg')}"}/
+                  .portfolio-info
+                    %h3 Market research
+                    %small domain.com
+                  / portfolio-info
+                / .portfolio-item
+            / /.row
+        / .portfolio
+        %section.section-contact.section-wrapper.gray-bg
+          .container-fluid
+            .row
+              .col-md-12
+                .section-title
+                  %h2 Contact
+            / .row
+            .row
+              .col-md-12
+                %address
+                  %strong Address
+                  %br/
+                  1355 Market Street, Suite 900
+                  %br/
+                  San Francisco, CA 94103
+                %address
+                  %strong Phone Number
+                  %br/
+                  +61 3 8376 6284
+                %address
+                  %strong Mobile Number
+                  %br/
+                  987 654 321
+                %address
+                  %strong Email
+                  %br/
+                  %a{:href => "mailto:#"} coffee@amelie.me
+            / .row
+            .row
+              .col-md-12
+                .feedback-form
+                  %h2 Get in touch
+                  %form#contactForm{:action => "sendemail.php", :method => "POST"}
+                    .form-group
+                      %label{:for => "InputName"} Name
+                      %input#InputName.form-control{:name => "name", :placeholder => "Full Name", :required => "", :type => "text"}/
+                    .form-group
+                      %label{:for => "InputEmail"} Email address
+                      %input#InputEmail.form-control{:name => "email", :placeholder => "Email", :required => "", :type => "email"}/
+                    .form-group
+                      %label{:for => "InputSubject"} Subject
+                      %input#InputSubject.form-control{:name => "subject", :placeholder => "Subject", :type => "text"}/
+                    .form-group
+                      %label.control-label{:for => "message-text"} Message
+                      %textarea#message-text.form-control{:name => "message", :placeholder => "Write message", :required => "", :rows => "4"}
+                    %button.btn.btn-primary{:type => "submit"} Submit
+                / .feedback-form
+          / .container-fluid
+        / .section-contact
+        %footer.footer
+          .copyright-section
+            .container-fluid
+              .row
+                .col-md-12
+                  .copytext
+                    © Resumex. All rights reserved | Design By:
+                    %a{:href => "https://themehippo.com"} themehippo
+              / .row
+            / .container-fluid
+          / .copyright-section
+        / .footer
+      / Sticky
+    / .right-col-block
+  / .columns-block
