@@ -73,7 +73,7 @@ a:focus, a:hover {
 	margin:0
 }
 .banner-agile {
-	background: asset_path('bg.jpg') no-repeat 0px 0px;
+	background: asset-url('bg.jpg') no-repeat 0px 0px;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -578,7 +578,7 @@ h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskil
 
 /*-- Services-starts-here --*/
 .services {
-    background: asset_path('ser.jpg') no-repeat center 0px fixed;
+    background: asset-url('ser.jpg') no-repeat center 0px fixed;
     background-size: cover;
 }
 h3.agileits-title{
@@ -935,7 +935,7 @@ input[type="submit"]:hover {
     width: 50%;
 }
 .contact-left-agile{
-  background: asset_path('contact2.jpg') no-repeat 0px 0px;
+  background: asset-url('contact2.jpg') no-repeat 0px 0px;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
