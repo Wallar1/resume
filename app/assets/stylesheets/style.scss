@@ -20,7 +20,7 @@ body {
   line-height: 1.8em;
   color: #3d3d50;
   font-weight: 300;
-  background: #6c757d fixed;
+  background: #b8eaff fixed;
 }
 
 /* --------------------------------------
@@ -163,7 +163,11 @@ button:focus {
   flex-direction: row;
   margin: 60px auto;
   padding: 0;
-  box-shadow: 0 0 0 1px #eaeaea;
+  //box-shadow: 0 0 0 1px #eaeaea;
+}
+
+.columns-block, .columns-block *{
+  border-radius: 8px;
 }
 
 .blocks {
@@ -373,6 +377,7 @@ button:focus {
     font-size: 10px;
     background-color: #313131;
     position: absolute;
+    left: 100%;
     top: 5px;
     padding: 0 8px;
     border-radius: 3px;
@@ -385,6 +390,14 @@ button:focus {
       border-right: 8px solid transparent;
     }
   }
+}
+
+.init-hid{
+  display: none;
+}
+
+.progress-item:hover .progress-percent {
+  display: block;
 }
 
 /*-------------------
