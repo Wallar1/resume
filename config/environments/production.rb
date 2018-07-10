@@ -91,8 +91,8 @@ Rails.application.configure do
       port: 587,
       authentication: :plain,
       domain: "gmail.com",
-      user_name: "robertwallace.naples@gmail.com",
-      password: "Porque?23"
+      user_name: ENV["GMAIL_USERNAME"],
+      password: ENV["GMAIL_PASSWORD"]
   }
   # ActionMailer Config
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
