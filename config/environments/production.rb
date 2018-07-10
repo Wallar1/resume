@@ -91,9 +91,14 @@ Rails.application.configure do
       port: 587,
       authentication: :plain,
       domain: "gmail.com",
-      user_name: ENV["GMAIL_USERNAME"],
-      password: ENV["GMAIL_PASSOWRD"]
+      user_name: "robertwallace.naples@gmail.com",
+      password: "Porque?23"
   }
+  # ActionMailer Config
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.raise_delivery_errors = true
+
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
