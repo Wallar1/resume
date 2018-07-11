@@ -6,14 +6,14 @@
   .columns-block.container
     .left-col-block.blocks
       %header.header.theiaStickySidebar
-        .profile-img
-          %img.img-responsive.w-100{:alt => "", :src => "#{asset_path('profile.jpg')}"}/ 
+        .profile-img{style: 'display: flex; justify-content: center;'}
+          %img.img-responsive.w-75{:alt => "", :src => "#{asset_path('profile.png')}"}/ 
         .content
           %h1 Craig Wallace
           %span.lead Software Engineer
           .about-text
             %p
-              Having studied biology at FSU, taught high school chemistry and physics, worked at Epic Systems on the Anesthesia and Optime applications, created an educational indie game, and built a rich CRM from scratch, I know how to succeed as a versatile team member for a growing company. 
+              Specialized in Ruby on Rails applications, with experience writing software in MUMPS, C#, and Javascript. Architecting scalable programs, from messaging apps, to web and native games, to healthcare data management suites. 
           %ul.social-icon
             %li
               %a{:href => "https://www.facebook.com/craig.wallace.39904?ref=bookmarks"}
@@ -25,35 +25,48 @@
     / .left-col-block
     .right-col-block.blocks
       .theiaStickySidebar
-        %section.expertise-wrapper.section-wrapper.gray-bg.animated.fadeInDown
+        %section.expertise-wrapper.section-wrapper.gray-bg
           .container-fluid
             .row
               .col-md-12
                 .section-title
                   %h2 Expertise
             / .row
-            .row
+            .row.animated.fadeInDown
+              .col-md-6
+                .expertise-item
+                  %h3 Messaging
+                  %p
+                    Building out a robust messaging application that was integrated into my CRM for Sungrade Solar allowed me to explore the ActionCable, ActiveJob, and ActionMailer technologies. The messages were created, then broadcast via ActionCable inside the background jobs, so that the application was fast and light. We also created different notifications when steps were completed or messages were sent, and we delivered them via ActionCable as well. Tracking events became trivial, because we created messages on all db changes, which allowed our users to have maximal control over the process. I also used Summernote as the messaging input, allowing users to send files and pictures, and to format their messages like a text document.
+              .col-md-6
+                .expertise-item
+                  %h3 Operational Reporting
+                  %p
+                    At Epic, I wrote scripts and created reports for large scale hospital systems using M (MUMPS - with a built in database for extremely scalable programs). The major development project I headed created a portal between several databases that our Anesthesia application was using. I also wrote many one-off reporting scripts for the anesthesia IT teams I worked with. At Sungrade, I created flexible reports to show information about customer progress and employee efficiency, as well as a commissions dashboard for employees and contractors to view exact details about their payments.
+            .row.animatable.fadeInDown
+              .col-md-6
+                .expertise-item
+                  %h3 Customer Tracking
+                  %p
+                    An important part of our process at Sungrade was identifying the state of each stage for every customer. We used an observer patten to update models according to a series of logic. Using some meta-programming, admins were able to add requirements easily, and complicated queries could be used to define the requirements for each stage. Additionally, we would map out areas for our surveyors and sales teams, so that they could be routed in the most efficient manner. 
+              .col-md-6
+                .expertise-item
+                  %h3 Files and Dates
+                  %p{contenteditable:"true"}
+                    In order to allow our users to upload a large variety of different files, we had to create a flexible system. We made the file uploads polymorphic to add to many models, and used Paperclip and S3 for storage. Additionally, since our users frequently had poor reception and had hundreds of files, we integrated plugins to allow chunking and drag & drop directories. 
+                    Our users lived across the world, and we wanted to use a date/time picker for improved user experience, so I created a system to recursively check nested parameters and format dates and files.
+            .row.animatable.fadeInDown
+              .col-md-6
+                .expertise-item
+                  %h3 Game Development
+                  %p
+                    As a chemistry and physics teacher, I wanted to engage my students with the material. Using the Unity Engine, and programming in C#, I created a game to learn basic chemistry reations by using chemical weapons to fight monsters, and a game for younger kids to practice math in the deep ocean. The most interesting challenge in these games was the creation of the ever-expanding dictionary of chemical reactions. To make the list of reactions flexible, I created a tool for Unity which could look at the equations and create gameObject cards for each molecule involved. I have also created basic HTML5 canvas games in javascript, including copies of asteroids and snake.  
               .col-md-6
                 .expertise-item
                   %h3 Project Management
                   %p
-                    Used JIRA, Monday, and ClubHouse to track issues, and Slack and Whatsapp to communicate with team members across the world. I enjoyed tailoring our meeting and release schedules to our team, and ensuring everyone was operating at their maximum sustainable efficiency. At Epic, we used internal project management tools, and I lead teams at 3 hospital systems to deliver customized software to their healthcare professionals. 
-              .col-md-6
-                .expertise-item
-                  %h3 Server-side
-                  %p
-                    At Epic, I used the M language to write scripts and reports for large scale hospital systems. I primarily lean on my Ruby on Rails experience now to deliver performant software. Building out a robust messaging application that was integrated into my CRM for Sungrade Solar allowed me to explore the ActionCable, ActiveJob, and ActionMailer technologies, as well as gems that add to this base functionality.
-            .row
-              .col-md-6
-                .expertise-item
-                  %h3 Front-end
-                  %p
-                    To design the UX, I have used used Zeplin and Invision. For my personal projects, my workflow is to sketch out the frames in Photoshop or GIMP, then to migrate these designs to Invision, and finally to build a POC that can be tested by users. In Rails, I prefer to deliver server-rendered HTML for 90% of the use cases, with Javascript/jQuery 'sprinkles' to enhance this content. For special cases (such as a calendar with a lot of functionality), I will serve JSON and use React or Vue components to ensure the best user experience on all platforms. Using Turbolinks, we can serve content to iOS and Android users as native applications as well. 
-              .col-md-6
-                .expertise-item
-                  %h3 Problem Solving
-                  %p
-                    I solved complex technical problems while at Epic for the Optime and Anesthesia applications. Most of these issues centered around data validation, record storage, close encounter extensions, custom searches, and operational reporting logic. At Sungrade, we solved many complex problems, including flexible file uploading, scalable messaging, date/time field tools, and signature validations. Additionally, we created a custom mailing feature and were building a custom SMS application.  
+                    Used JIRA, Monday, and ClubHouse to track issues, and Slack and Whatsapp to communicate with team members across the world. I built the Sungrade team, enjoying the interview process, and chose our stack and workflow. I was focused on tailoring our meeting and release schedules to our team, and ensuring everyone was operating at their maximum sustainable efficiency, so we used Agile principles. At Epic, we used internal project management tools, and I lead teams at 3 hospital systems to deliver customized software to their healthcare professionals. As the point person at Epic, I directed the projects, lead the meetings, and escalated issues with the Anesthesia and Optime applications.
+               
         / .expertise-wrapper
         %section.section-wrapper.skills-wrapper
           .container-fluid
@@ -81,8 +94,8 @@
                   .progress-item
                     %span.progress-title Javascript
                     .progress
-                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "75", :role => "progressbar", :style => "width: 70%;"}
-                      %span.progress-percent 70%
+                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "75", :role => "progressbar", :style => "width: 85%;"}
+                      %span.progress-percent 85%
                     / /.progress
                   / /.skill-progress
                   .progress-item
@@ -100,13 +113,23 @@
                     .progress
                       .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 65%"}
                       %span.progress-percent 65%
+                  .progress-item
+                    %span.progress-title HTML/CSS/Sass
+                    .progress
+                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 80%"}
+                      %span.progress-percent 80%
+                  .progress-item
+                    %span.progress-title Mumps
+                    .progress
+                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 60%"}
+                      %span.progress-percent 60%
                     / .progress
                   / .skill-progress
                 / /.progress-wrapper
             / .row
           / .container-fluid
         / .skills-wrapper
-        %section.section-wrapper.section-experience.gray-bg.animatable.fadeInDown
+        %section.section-wrapper.section-experience.gray-bg
           .container-fluid
             .row
               .col-md-12
@@ -115,24 +138,24 @@
             / .row
             .row
               .col-md-12
-                .content-item
+                .content-item.animatable.fadeInDown
                   %small 2017 - 2018
                   %h3 Lead Software Engineer
                   %h4 Sungrade Solar
                   %p Walnut Creek, CA
                 / .experience-item
-                .content-item
+                .content-item.animatable.fadeInDown
                   %small 2016 - 2017
                   %h3 Educational Game Developer
                   %h4 Reaction Learning
                   %p Madison, WI
                 / .experience-item
-                .content-item
+                .content-item.animatable.fadeInDown
                   %small 2016
                   %h3 Technical Problem Solver
                   %h4 Epic Systems
                   %p Madison, WI
-                .content-item
+                .content-item.animatable.fadeInDown
                   %small 2014 - 2016
                   %h3 Chemistry / Physics Teacher
                   %h4 Collier County Public Schools
@@ -163,9 +186,11 @@
             .row
               .col-md-12
                 .section-title
-                  %h2 Interest
+                  %h2 Interests
             / .row
             .row
+              .profile-img
+                %img.img-responsive.w-100.mb-5{:alt => "", :src => "#{asset_path('profile2.jpg')}"}/ 
               .col-md-12
                 .content-item.animatable.fadeInDown
                   %h3 Books
