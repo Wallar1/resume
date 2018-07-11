@@ -25,7 +25,7 @@
     / .left-col-block
     .right-col-block.blocks
       .theiaStickySidebar
-        %section.expertise-wrapper.section-wrapper.gray-bg
+        %section.expertise-wrapper.section-wrapper.gray-bg.animated.fadeInDown
           .container-fluid
             .row
               .col-md-12
@@ -67,46 +67,46 @@
                   .progress-item
                     %span.progress-title Ruby
                     .progress
-                      .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 75%"}
-                        %span.init-hid.progress-percent 75%
+                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 75%"}
+                      %span.progress-percent 75%
                     / .progress
                   / .skill-progress
                   .progress-item
                     %span.progress-title Rails
                     .progress
-                      .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "90", :role => "progressbar", :style => "width: 90%"}
-                        %span.init-hid.progress-percent 90%
+                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "90", :role => "progressbar", :style => "width: 90%"}
+                      %span.progress-percent 90%
                     / /.progress
                   / /.skill-progress
                   .progress-item
                     %span.progress-title Javascript
                     .progress
-                      .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "75", :role => "progressbar", :style => "width: 70%;"}
-                        %span.init-hid.progress-percent 70%
+                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "75", :role => "progressbar", :style => "width: 70%;"}
+                      %span.progress-percent 70%
                     / /.progress
                   / /.skill-progress
                   .progress-item
                     %span.progress-title Project Management
                     .progress
-                      .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "75", :role => "progressbar", :style => "width: 75%;"}
-                        %span.init-hid.progress-percent 75%
+                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "75", :role => "progressbar", :style => "width: 75%;"}
+                      %span.progress-percent 75%
                   .progress-item
                     %span.progress-title C#
                     .progress
-                      .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 50%"}
-                        %span.init-hid.progress-percent 50%
+                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 50%"}
+                      %span.progress-percent 50%
                   .progress-item
                     %span.progress-title Unity
                     .progress
-                      .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 65%"}
-                        %span.init-hid.progress-percent 65%
+                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 65%"}
+                      %span.progress-percent 65%
                     / .progress
                   / .skill-progress
                 / /.progress-wrapper
             / .row
           / .container-fluid
         / .skills-wrapper
-        %section.section-wrapper.section-experience.gray-bg
+        %section.section-wrapper.section-experience.gray-bg.animatable.fadeInDown
           .container-fluid
             .row
               .col-md-12
@@ -141,7 +141,7 @@
             / .row
           / .container-fluid
         / .section-experience
-        %section.section-wrapper.section-education
+        %section.section-wrapper.section-education.animatable.fadeInDown
           .container-fluid
             .row
               .col-md-12
@@ -167,15 +167,15 @@
             / .row
             .row
               .col-md-12
-                .content-item
+                .content-item.animatable.fadeInDown
                   %h3 Books
                   %p
                     After discovering the wonderful world of audiobooks, I now have a book playing while I am grocery shopping, driving, doing dishes, and working out. A couple books that I have enjoyed recently are "A Connecticut Yankee in King Arthur's Court" by Mark Twain about a time traveler to midevil times, and "Emotional Success: the Power of Gratitude, Compassion, and Pride" by David DeSteno. The latter has been life changing, and is about the benefits of using these 3 emotions to drive our lives, rather than executive functions, because they are more powerful, and create positive feedback loops.
-                .content-item
+                .content-item.animatable.fadeInDown
                   %h3 Sports
                   %p
                     I play basketball 6-7 days a week, and consider a shoot-around equivalent to meditation. Any challenge is very welcome! I watch a lot of basketball and football, and play fantasy football as well. If you need an extra player for a league, let me know :)
-                .content-item
+                .content-item.animatable.fadeInDown
                   %h3 Art
                   %p
                     I will jump at any excuse to start a craft or an art project, and love to work with new media. My string art created by hammering nails into a decorated wood piece, then wrapping yarn around the nails in a pattern, turned out well. Painting a Game of Thrones character on a bed sheet for a large wall decoration won a small competition. I would really like to improve my digital artwork skills, but so far it is a work in progress. 
@@ -229,7 +229,7 @@
                 .section-title
                   %h2 Contact
             / .row
-            .row
+            .row.animatable.fadeInDown
               .col-md-12
                 %address
                   %strong Address
@@ -246,7 +246,7 @@
                   %br/
                   %a{:href => "mailto:reactionlearning@gmail.com"} ReactionLearning@gmail.com
 
-            .row
+            .row.animatable.fadeInDown
               .col-md-12
                 .feedback-form
                   %h2 Get in touch
