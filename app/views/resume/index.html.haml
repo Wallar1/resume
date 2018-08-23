@@ -60,7 +60,7 @@
                 .expertise-item
                   %h3 Game Development
                   %p
-                    As a chemistry and physics teacher, I wanted to engage my students with the material. Using the Unity Engine, and programming in C#, I created a game to learn basic chemistry reations by using chemical weapons to fight monsters, and a game for younger kids to practice math in the deep ocean. The most interesting challenge in these games was the creation of the ever-expanding dictionary of chemical reactions. To make the list of reactions flexible, I created a tool for Unity which could look at the equations and create gameObject cards for each molecule involved. I have also created basic HTML5 canvas games in javascript, including copies of asteroids and snake.  
+                    As a chemistry and physics teacher, I wanted to engage my students with the material. Using the Unity Engine, and programming in C#, I created a game to learn basic chemistry reations by using chemical weapons to fight monsters, and a game for younger kids to practice math in the deep ocean. The most interesting challenge in these games was the creation of the ever-expanding dictionary of chemical reactions. To make the list of reactions flexible, I created a tool for Unity which could look at the equations and create gameObject cards for each molecule involved. I have also created basic HTML5 canvas games in javascript, including copies of asteroids and snake (much simpler!).  
               .col-md-6
                 .expertise-item
                   %h3 Project Management
@@ -129,6 +129,60 @@
             / .row
           / .container-fluid
         / .skills-wrapper
+
+        .section-publications
+        %section.section-wrapper.portfolio-section
+          .container-fluid
+            .row
+              .col-md-12
+                .section-title
+                  %h2 Portfolio
+                  %p.text-black-50 *Note* These are not public facing, but I am free to show the code and give demonstrations. That is the fun part!
+            .row
+              .col-md-12
+                %a.portfolio-item.mb-0{'data-toggle'=>"collapse", href: "#collapse1", role: "button", 'aria-expanded'=>"false", 'aria-controls'=>"collapseExample"}
+                  .portfolio-thumb
+                    %img{:alt => "", :src => "#{asset_path('photovoltaic-2138992_1920.jpg')}"}/
+                  .portfolio-info
+                    %h3 Stellar Terra
+                    %small stellarterra.herokuapp.com
+                #collapse1.collapse
+                  .card.card-body
+                    Stellar was using a variety of tools to input and track their customers, and needed something more streamlined. My task was to create a dashboard for each user, which tied together all of the information they needed to see. The most challenging aspect so far was creating a fast and flexible stage decision tree. I used some javascript plugins for charting the reports, People Api for saving contacts, Google Maps for geolocation, geocoding addresses, and displaying maps, Actioncable for auditing, ActiveStorage for uploading files, and Google Calendar for scheduling. I am currently working on the advanced search feature to reduce the navigation through the forms.
+
+                  / portfolio-info
+                / .portfolio-item
+              .col-md-12
+                %a.portfolio-item.mb-0.mt-5{'data-toggle'=>"collapse", href: "#collapse2", role: "button", 'aria-expanded'=>"false", 'aria-controls'=>"collapseExample"}
+                  .portfolio-thumb
+                    %img{:alt => "", :src => "#{asset_path('solar-panels-1477987_1920.jpg')}"}/
+                  .portfolio-info
+                    %h3 Sungrade Sprocket
+                    %small sungrade-sprocket.herokuapp.com
+                #collapse2.collapse
+                  .card.card-body
+                    Sungrade was using google sheets to record customer information and progress, and then moved to another management system, but realized it wasn't able to be customized for their needs. The CRM I created for them allowed for the tracking of customers, easy communication between team members, activity auditing, custom email creation and automatic emails, reporting for competitions and commissions, calendars for scheduling appointments, and maps for displaying customer location and scheduling surveyors.
+                  / portfolio-info
+                / .portfolio-item
+              .col-md-6
+                %a.portfolio-item.mb-0.mt-5{'data-toggle'=>"collapse", href: "#collapse3", role: "button", 'aria-expanded'=>"false", 'aria-controls'=>"collapseExample"}
+                  .portfolio-thumb
+                    %img{:alt => "", :src => "#{asset_path('test-214185_1280.jpg')}"}/
+                  .portfolio-info
+                    %h3 Reaction
+                  / portfolio-info
+                / .portfolio-item
+              .col-md-6
+                %a.portfolio-item.mb-0.mt-5{'data-toggle'=>"collapse", href: "#collapse3", role: "button", 'aria-expanded'=>"false", 'aria-controls'=>"collapseExample"}
+                  .portfolio-thumb
+                    %img{:alt => "", :src => "#{asset_path('abacus-1866497_1920.jpg')}"}/
+                  .portfolio-info
+                    %h3 Deep Sea Monster Math
+              #collapse3.collapse
+                .card.card-body
+                  Using Unity and C#, I created a couple educational games. When I was teaching chemistry and physics, I sought after a more engaging was to reach the students. Labs were amazing, but they were only able to happen once, and most chemistry experiments were too dangerous for the classroom. The goal for the Monster Math game was to improve basic arithmetic, and was very similar to Fruit Ninja, where students had to swipe the monsters when their equations were correct. The chemistry game was more challenging, where students had to combine reactant playing cards together to perform different attacks. Truth be told for both of the games, the artwork and animations took a large majority of the time. The programming of the state machine, the input handling, the movement, and the score keeping/ rewards were fairly basic. The most difficult part was creating the tool to handle the reactant cards when they were created. It was a dictionary of sorts, and would recognize different reactant gameobjects and instantiate their products when dropped together.
+
+        //WORK EXPERIENCE
         %section.section-wrapper.section-experience.gray-bg
           .container-fluid
             .row
@@ -204,49 +258,8 @@
                   %h3 Art
                   %p
                     I will jump at any excuse to start a craft or an art project, and love to work with new media. My string art created by hammering nails into a decorated wood piece, then wrapping yarn around the nails in a pattern, turned out well. Painting a Game of Thrones character on a bed sheet for a large wall decoration won a small competition. I would really like to improve my digital artwork skills, but so far it is a work in progress. 
-            / .row
-        / .section-publications
-        / %section.section-wrapper.portfolio-section
-        /   .container-fluid
-        /     .row
-        /       .col-md-12
-        /         .section-title
-        /           %h2 Portfolio
-        /     .row
-        /       .col-md-6
-        /         %a.portfolio-item{:href => "#"}
-        /           .portfolio-thumb
-        /             %img{:alt => "", :src => "#{asset_path('portfolio-1.jpg')}"}/
-        /           .portfolio-info
-        /             %h3 Creative concepts
-        /             %small domain.com
-        /           / portfolio-info
-        /         / .portfolio-item
-        /       .col-md-6
-        /         %a.portfolio-item{:href => "#"}
-        /           .portfolio-thumb
-        /             %img{:alt => "", :src => "#{asset_path('portfolio-2.jpg')}"}/
-        /           .portfolio-info
-        /             %h3 Customer focused
-        /             %small domain.com
-        /           / portfolio-info
-        /         / .portfolio-item
-        /       .col-md-6
-        /         %a.portfolio-item{:href => "#"}
-        /           .portfolio-thumb
-        /             %img{:alt => "", :src => "#{asset_path('portfolio-3.jpg')}"}/
-        /           .portfolio-info
-        /             %h3 Management methodology
-        /             %small domain.com
-        /           / portfolio-info
-        /         / .portfolio-item
-        /       .col-md-6
-        /         %a.portfolio-item{:href => "#"}
-        /           .portfolio-thumb
-        /             %img{:alt => "", :src => "#{asset_path('portfolio-4.jpg')}"}/
-        /           .portfolio-info
-        /             %h3 Market research
-        /             %small domain.com
+            /.row
+        
         %section.section-contact.section-wrapper.gray-bg
           .container-fluid
             .row

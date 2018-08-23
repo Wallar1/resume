@@ -7,6 +7,7 @@
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     / Custom fonts for this template
     %link{:href => "//fonts.googleapis.com/css?family=Nunito:300,400,700", :rel => "stylesheet"}
+    = favicon_link_tag asset_path('favicon.ico'), :rel => 'icon', :type => "image/x-icon"
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body#page-top
