@@ -9,7 +9,7 @@ end
 gem 'haml'
 gem 'html2haml'
 gem "font-awesome-rails"
-gem 'bootstrap', '~> 4.1.1'
+gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
