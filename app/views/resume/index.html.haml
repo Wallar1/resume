@@ -7,13 +7,13 @@
     .left-col-block.blocks
       %header.header.theiaStickySidebar
         .profile-img{style: 'display: flex; justify-content: center;'}
-          %img.img-responsive.w-75{:alt => "", :src => "#{asset_path('profile.png')}"}/ 
+          %img.img-responsive.w-75{:alt => "", :src => "#{asset_path('profpic.png')}"}/ 
         .content
           %h1 Craig Wallace
           %span.lead Software Engineer
           .about-text
             %p
-              Having built rich applications from concept to implementation, I will deliver the enterprise software you envision. Specialized in Ruby on Rails applications, with experience writing software in MUMPS, C#, and Javascript. Architecting scalable programs, from messaging apps, to web and native games, to healthcare data management suites. 
+              I am a full stack programmer with experience in a variety of languages and frameworks. I love working with people, diving into complex problems and codebases, and collaboratively drawing up efficient solutions. Having built rich applications from concept to implementation, I will deliver the enterprise software you envision!
           %ul.social-icon
             %li
               %a{:href => "https://www.facebook.com/craig.wallace.39904?ref=bookmarks"}
@@ -25,104 +25,211 @@
     / .left-col-block
     .right-col-block.blocks
       .theiaStickySidebar
-        %section.expertise-wrapper.section-wrapper.gray-bg
+        %section.section-wrapper.section-experience.gray-bg
           .container-fluid
             .row
               .col-md-12
                 .section-title
-                  %h2 Expertise
+                  %h2 Experience
             / .row
-            .row.animated.fadeInDown
-              .col-md-6
-                .expertise-item
-                  %h3 Messaging
-                  %p
-                    Building out a robust messaging application that was integrated into my CRM for Sungrade Solar allowed me to explore the ActionCable, ActiveJob, and ActionMailer technologies. The messages were created, then broadcast via ActionCable inside the background jobs, so that the application was fast and light. We also created different notifications when steps were completed or messages were sent, and we delivered them via ActionCable as well. Tracking events became trivial, because we created messages on all db changes, which allowed our users to have maximal control over the process. I also used Summernote as the messaging input, allowing users to send files and pictures, and to format their messages like a text document.
-              .col-md-6
-                .expertise-item
-                  %h3 Operational Reporting
-                  %p
-                    At Epic, I wrote scripts and created reports for large scale hospital systems using M (MUMPS - with a built in database for extremely scalable programs). The major development project I headed created a portal between several databases that our Anesthesia application was using. I also wrote many one-off reporting scripts for the anesthesia IT teams I worked with. At Sungrade, I created flexible reports to show information about customer progress and employee efficiency, as well as a commissions dashboard for employees and contractors to view exact details about their payments.
-            .row.animatable.fadeInDown
-              .col-md-6
-                .expertise-item
-                  %h3 Customer Tracking
-                  %p
-                    An important part of our process at Sungrade was identifying the state of each stage for every customer. We used an observer patten to update models according to a series of logic. Using some meta-programming, admins were able to add requirements easily, and complicated queries could be used to define the requirements for each stage. Additionally, we would map out areas for our surveyors and sales teams, so that they could be routed in the most efficient manner. 
-              .col-md-6
-                .expertise-item
-                  %h3 Files and Dates
-                  %p{contenteditable:"true"}
-                    In order to allow our users to upload a large variety of different files, we had to create a flexible system. We made the file uploads polymorphic to add to many models, and used Paperclip and S3 for storage. Additionally, since our users frequently had poor reception and had hundreds of files, we integrated plugins to allow chunking and drag & drop directories. 
-                    Our users lived across the world, and we wanted to use a date/time picker for improved user experience, so I created a system to recursively check nested parameters and format dates and files.
-            .row.animatable.fadeInDown
-              .col-md-6
-                .expertise-item
-                  %h3 Game Development
-                  %p
-                    As a chemistry and physics teacher, I wanted to engage my students with the material. Using the Unity Engine, and programming in C#, I created a game to learn basic chemistry reations by using chemical weapons to fight monsters, and a game for younger kids to practice math in the deep ocean. The most interesting challenge in these games was the creation of the ever-expanding dictionary of chemical reactions. To make the list of reactions flexible, I created a tool for Unity which could look at the equations and create gameObject cards for each molecule involved. I have also created basic HTML5 canvas games in javascript, including copies of asteroids and snake (much simpler!).  
-              .col-md-6
-                .expertise-item
-                  %h3 Project Management
-                  %p
-                    Used JIRA, Monday, and ClubHouse to track issues, and Slack and Whatsapp to communicate with team members across the world. I built the Sungrade team, enjoying the interview process, and chose our stack and workflow. I was focused on tailoring our meeting and release schedules to our team, and ensuring everyone was operating at their maximum sustainable efficiency, so we used Agile principles. At Epic, we used internal project management tools, and I lead teams at 3 hospital systems to deliver customized software to their healthcare professionals. As the point person at Epic, I directed the projects, lead the meetings, and escalated issues with the Anesthesia and Optime applications.
-               
-        / .expertise-wrapper
+            .row
+              .col-md-4.hover-darken
+                .content-item.tab
+                  %small August 2019 - Present
+                  %h3 Full Stack Programmer
+                  %h4 Stratim
+                  %p San Francisco, CA
+                / .experience-item
+                .content-item.tab
+                  %small July 2018 - March 2019
+                  %h3 Software Developer
+                  %h4 Stellar Power and Workbond (Contracts)
+                  %p Los Altos, CA
+                / .experience-item
+                .content-item.tab
+                  %small September 2017 - July 2018
+                  %h3 Lead Software Developer
+                  %h4 Sungrade Solar
+                  %p Walnut Creek, CA
+                / .experience-item
+                .content-item.tab
+                  %small November 2016 - August 2017
+                  %h3 Educational Game Developer
+                  %h4 Reaction Learning
+                  %p Madison, WI
+                / .experience-item
+                .content-item.tab
+                  %small March 2016 - November 2016
+                  %h3 Technical Problem Solver
+                  %h4 Epic Systems
+                  %p Madison, WI
+                .content-item.tab
+                  %small August 2014 - February 2016
+                  %h3 Chemistry / Physics Teacher
+                  %h4 Collier County Public Schools
+                  %p Collier County, FL
+                .content-item
+                  %small August 2010 - May 2014
+                  %h3 BS Biology, minor: Chemistry 
+                  %h4 Florida State University
+                  %p Tallahassee, FL
+                / .experience-item
+              /.col-md-4
+
+
+              .col-md-8
+                .display-tab.active
+                  %h2 Stratim
+                  %p As a member of the vendor services team, I improved our application by adding features, refactoring, and increasing the speed. I developed tools for developers, wrote tests to move us towards continuous integration, and helped build a testing framework.
+                  %h3 Testing 
+                  %ul
+                    %li Wrote frontend tests in Chai/Mocha and Jest/Vue test utils
+                    %li Wrote backend tests in jUnit
+                    %li Helped build an integration testing framework. Initially the tests were in jUnit, and I allowed our apis to be instantiated using Guice dependecy injection combined with Retrofit
+                    %li The integration testing framework evolved to replace our QA team, completely using Selenium and Cucumber to manipulate the browser
+                    %li Used PIT for mutation testing
+                  %h3 Developer tools and dev-ops 
+                  %ul
+                    %li Helped build Python terminal tools to run and update services, and deploy changes. When deploying changes, it created a Jira filter with the tickets for review (for the QA team), and a manifest report of all of the changes
+                    %li Used sbt and gradle for builds / dependency management, and play and spring frameworks
+                    %li Created Jenkins jobs for testing when code was pushed
+                    %li Used docker and docker swarm to run services
+                  %h3 Application features
+                  %ul
+                    %li Added the ability to download multiple attachments, while zipping them appropriately
+                    %li Reduced http calls between services by binding service apis
+                    %li Created apis and updated libraries
+                    %li Updated styling using SCSS, and frontend state using Vuex
+                    %li Wrote queries with ebean, criteriaApi, raw SQL, and sql generator services
+                    %li Converted billing units (fixed problem where tables were storing miles/km/meters together
+                    %li Created business events with Kafka, and frontend events with the vue event bus
+
+
+                .display-tab
+                  %h2 Stellar and Workbond
+                  %p Contracted work with Stellar Power (a solar sales company) and Workbond (a workplace social networking app) to help them achieve their goals.
+                  %h3 Stellar Power
+                  %ul
+                    %li Built an integrated sales dashboard that allowed customer creation and visualization
+                    %li Created an interactive map tool, where forms and icons were used with a google map to make adding and tracking customers extremely easy
+                    %li Google calendars were linked to create and display appointments automatically, and easily display the day's tasks
+                    %li Customer stats were presented in user friendly graphs
+                    %li The backend for this app was in Rails, and the frontend used React
+                    %li Used AnyCable and a Go server to quickly update the application via a websocket connection and parallel processing
+                  %h3 Workbond
+                  %ul
+                    %li Updated the login and user creation process. The process was detailed as users went through a variety of steps to enter their information
+                    %li Sped up loading times and improved page transitions
+                    %li Provided guidance and strategy for the leadership
+                    %li The application was built in React-Native, React Navigation, and Redux
+                .display-tab
+                  %h2 Sungrade
+                  %p Built a CRM application to manage, track, and communicate with customers and team members as the solar installation stages were completed. The application was built in rails with postgres db, and deployed on heroku and AWS. 
+
+                  %h3 Messaging team members and customers
+                  %ul
+                    %li Automated emails were generated when certain steps were complete, and we built the ability to save custom email templates so Sales Consultants could send common emails with a single click
+                    %li Tags were applied automatically when customers had special circumstances, helping the backend team easily communicate with the Sales team
+                    %li Custom instant messaging system was built, so that conversations tied to a customer account were easily accessible. Additionally, we emitted all of the events that happened for the customer, so the full history could be quickly viewed. Files, text, and images were able to be sent.
+                    %li Emails were created using ActionMailer and ActiveJob, and tags and messages were created using ActionCable (websockets) and ActionJob. The messages were broadcast via ActionCable inside of the background jobs. This allowed the app to be fast, light, and immediately responsive to any changes
+                  / ul
+                  %h3 Mapping routes, User roles, Stage logic, and File Storage
+                  %ul
+                    %li We integrated Google maps to locate customers and route the sales and surveyor teams
+                    %li In the admin panel we created, admins were able to update most records, including users and their roles. The roles determined their access to the site. 
+                    %li Admins were also able to add custom logic to determine the checks that needed to be done between stages. This was accomplished with some metaprogramming and complicated queries
+                    %li We used Paperclip and amazon S3 for storage, and allowed for file attachments on a variety of records. Our users were in the field with poor reception, so in order to boost performance and ease of use, we integrated plugins to allow chunking and drag & drop file directories.
+                    %li Created a service that recursively handled the date/time/timezones on all records and nested records
+                    %li Built a commissions dashboard for sales reps to view details about their past and upcoming payments, as well as view information about their efficiency
+                /.display-tab
+                .display-tab
+                  %h2 Reaction - Game Development
+                  %p As a chemistry and physics teacher, I wanted to engage my students with the material. I created a mobile card game to show different reactions and their effects as they fought monsters, ideally hiding the difficult concepts behind a fun gaming experience. I also created a small game for young kids to learn math as they swiped fish in the ocean
+                  %ul
+                    %li Used the Unity Engine, and programming in C#. Created all of the cards and effects in Unity
+                    %li Drew characters in Gimp and Krita, and created the 2D animations in Blender
+                    %li In order to create a flexible library of reactions, I created a tool to easily input the equations that automatically built the gameObject cards for each molecule involved. 
+                    %li Also created small HTML5 canvas games in javascript (such as snake and asteroids)
+                /.display-tab
+                .display-tab
+                  %h2 Epic Systems
+                  %p As a Technical Problem Solver, I worked with several large hospital systems to deploy, maintain, and upgrade their Anestesia and Optime applications. I was able to travel to several hospitals to help in the operating rooms, but mostly spent time trouble shooting issues and communicating over video chat.
+                  %ul
+                    %li Delivered customized software to their healthcare professionals
+                    %li As the point person at Epic, I directed the projects, lead the meetings, and escalated issues with the Anesthesia and Optime applications.
+                    %li Development project connected several databases together, written in M (MUMPS - language with a built in database for extremely scalable programs), so the Anesthesia team could use information for the Optime context
+                    %li Wrote various reporting scripts for the IT teams, answering pertinent questions from leadership
+                    %li Communicated daily with IT teams in Boston and Illinois
+                /.display-tab
+                .display-tab
+                  %h2 Immokalee High Chemistry/Physics
+                  %p Taught lab based chemistry and physics to high schoolers at Immokalee High School. This was a great experience to work with kids, giving them tips and encouragement on how to be successful.
+                  %ul
+                    %li Created lesson plans and classroom organizational structures that optimized learning
+                    %li Ran a lab based curriculum, centered around exploration, and continuously monitored the safety and well being of my students
+                    %li Gave personal advice to many students, and wrote letters of recommendation
+                    %li Received a grant for a special guitar building project for physics
+                    
+                
+              / .col-md-8
+            / .row
+          / .container-fluid
+        / .section-experience
+  
         %section.section-wrapper.skills-wrapper
           .container-fluid
             .row
               .col-md-12
                 .section-title
-                  %h2 Skills
+                  %h2 Languages
             .row
               .col-md-12
                 .progress-wrapper
                   .progress-item
-                    %span.progress-title Ruby
+                    %span.progress-title Java
                     .progress
                       .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 75%"}
                       %span.progress-percent 75%
+                  .progress-item
+                    %span.progress-title Python
+                    .progress
+                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 65%"}
+                      %span.progress-percent 65%
+                  .progress-item
+                    %span.progress-title Ruby
+                    .progress
+                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 45%"}
+                      %span.progress-percent 45%
                     / .progress
                   / .skill-progress
-                  .progress-item
-                    %span.progress-title Rails
-                    .progress
-                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "90", :role => "progressbar", :style => "width: 90%"}
-                      %span.progress-percent 90%
-                    / /.progress
                   / /.skill-progress
                   .progress-item
                     %span.progress-title Javascript
                     .progress
-                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "75", :role => "progressbar", :style => "width: 85%;"}
-                      %span.progress-percent 85%
+                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "75", :role => "progressbar", :style => "width: 95%;"}
+                      %span.progress-percent 95%
                     / /.progress
                   / /.skill-progress
-                  .progress-item
-                    %span.progress-title Project Management
-                    .progress
-                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "75", :role => "progressbar", :style => "width: 75%;"}
-                      %span.progress-percent 75%
                   .progress-item
                     %span.progress-title C#
                     .progress
                       .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 50%"}
                       %span.progress-percent 50%
                   .progress-item
-                    %span.progress-title Unity
-                    .progress
-                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 65%"}
-                      %span.progress-percent 65%
-                  .progress-item
                     %span.progress-title HTML/CSS/Sass
                     .progress
-                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 80%"}
-                      %span.progress-percent 80%
+                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 70%"}
+                      %span.progress-percent 70%
+                  .progress-item
+                    %span.progress-title Bash
+                    .progress
+                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 35%"}
+                      %span.progress-percent 35%
                   .progress-item
                     %span.progress-title Mumps
                     .progress
-                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 60%"}
-                      %span.progress-percent 60%
+                      .progress-bar.animatable.moveAcross{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "62", :role => "progressbar", :style => "width: 25%"}
+                      %span.progress-percent 25%
                     / .progress
                   / .skill-progress
                 / /.progress-wrapper
@@ -130,136 +237,57 @@
           / .container-fluid
         / .skills-wrapper
 
-        .section-publications
-        %section.section-wrapper.portfolio-section
-          .container-fluid
-            .row
-              .col-md-12
-                .section-title
-                  %h2 Portfolio
-                  %p.text-black-50 *Note* These are not public facing, but I am free to show the code and give demonstrations. That is the fun part!
-            .row
-              .col-md-12
-                %a.portfolio-item.mb-0{'data-toggle'=>"collapse", href: "#collapse1", role: "button", 'aria-expanded'=>"false", 'aria-controls'=>"collapseExample"}
-                  .portfolio-thumb
-                    %img{:alt => "", :src => "#{asset_path('photovoltaic-2138992_1920.jpg')}"}/
-                  .portfolio-info
-                    %h3 Stellar Terra
-                    %small stellarterra.herokuapp.com
-                #collapse1.collapse
-                  .card.card-body
-                    Stellar was using a variety of tools to input and track their customers, and needed something more streamlined. My task was to create a dashboard for each user, which tied together all of the information they needed to see. The most challenging aspect so far was creating a fast and flexible stage decision tree. I used some javascript plugins for charting the reports, People Api for saving contacts, Google Maps for geolocation, geocoding addresses, and displaying maps, Actioncable for auditing, ActiveStorage for uploading files, and Google Calendar for scheduling. I am currently working on the advanced search feature to reduce the navigation through the forms.
+        / .section-publications
+        / %section.section-wrapper.portfolio-section
+        /   .container-fluid
+        /     .row
+        /       .col-md-12
+        /         .section-title
+        /           %h2 Portfolio
+        /           %p.text-black-50 *Note* These are not public facing, but I am free to show the code and give demonstrations. That is the fun part!
+        /     .row
+        /       .col-md-12
+        /         %a.portfolio-item.mb-0{'data-toggle'=>"collapse", href: "#collapse1", role: "button", 'aria-expanded'=>"false", 'aria-controls'=>"collapseExample"}
+        /           .portfolio-thumb
+        /             %img{:alt => "", :src => "#{asset_path('photovoltaic-2138992_1920.jpg')}"}/
+        /           .portfolio-info
+        /             %h3 Stellar Terra
+        /             %small stellarterra.herokuapp.com
+        /         #collapse1.collapse
+        /           .card.card-body
+        /             Stellar was using a variety of tools to input and track their customers, and needed something more streamlined. My task was to create a dashboard for each user, which tied together all of the information they needed to see. The most challenging aspect so far was creating a fast and flexible stage decision tree. I used some javascript plugins for charting the reports, People Api for saving contacts, Google Maps for geolocation, geocoding addresses, and displaying maps, Actioncable for auditing, ActiveStorage for uploading files, and Google Calendar for scheduling. I am currently working on the advanced search feature to reduce the navigation through the forms.
 
-                  / portfolio-info
-                / .portfolio-item
-              .col-md-12
-                %a.portfolio-item.mb-0.mt-5{'data-toggle'=>"collapse", href: "#collapse2", role: "button", 'aria-expanded'=>"false", 'aria-controls'=>"collapseExample"}
-                  .portfolio-thumb
-                    %img{:alt => "", :src => "#{asset_path('solar-panels-1477987_1920.jpg')}"}/
-                  .portfolio-info
-                    %h3 Sungrade Sprocket
-                    %small sungrade-sprocket.herokuapp.com
-                #collapse2.collapse
-                  .card.card-body
-                    Sungrade was using google sheets to record customer information and progress, and then moved to another management system, but realized it wasn't able to be customized for their needs. The CRM I created for them allowed for the tracking of customers, easy communication between team members, activity auditing, custom email creation and automatic emails, reporting for competitions and commissions, calendars for scheduling appointments, and maps for displaying customer location and scheduling surveyors.
-                  / portfolio-info
-                / .portfolio-item
-              .col-md-6
-                %a.portfolio-item.mb-0.mt-5{'data-toggle'=>"collapse", href: "#collapse3", role: "button", 'aria-expanded'=>"false", 'aria-controls'=>"collapseExample"}
-                  .portfolio-thumb
-                    %img{:alt => "", :src => "#{asset_path('test-214185_1280.jpg')}"}/
-                  .portfolio-info
-                    %h3 Reaction
-                  / portfolio-info
-                / .portfolio-item
-              .col-md-6
-                %a.portfolio-item.mb-0.mt-5{'data-toggle'=>"collapse", href: "#collapse3", role: "button", 'aria-expanded'=>"false", 'aria-controls'=>"collapseExample"}
-                  .portfolio-thumb
-                    %img{:alt => "", :src => "#{asset_path('abacus-1866497_1920.jpg')}"}/
-                  .portfolio-info
-                    %h3 Deep Sea Monster Math
-              #collapse3.collapse
-                .card.card-body
-                  Using Unity and C#, I created a couple educational games. When I was teaching chemistry and physics, I sought after a more engaging was to reach the students. Labs were amazing, but they were only able to happen once, and most chemistry experiments were too dangerous for the classroom. The goal for the Monster Math game was to improve basic arithmetic, and was very similar to Fruit Ninja, where students had to swipe the monsters when their equations were correct. The chemistry game was more challenging, where students had to combine reactant playing cards together to perform different attacks. Truth be told for both of the games, the artwork and animations took a large majority of the time. The programming of the state machine, the input handling, the movement, and the score keeping/ rewards were fairly basic. The most difficult part was creating the tool to handle the reactant cards when they were created. It was a dictionary of sorts, and would recognize different reactant gameobjects and instantiate their products when dropped together.
-
-        //WORK EXPERIENCE
-        %section.section-wrapper.section-experience.gray-bg
-          .container-fluid
-            .row
-              .col-md-12
-                .section-title
-                  %h2 Work Experience
-            / .row
-            .row
-              .col-md-12
-                .content-item.animatable.fadeInDown
-                  %small 2017 - 2018
-                  %h3 Lead Software Engineer
-                  %h4 Sungrade Solar
-                  %p Walnut Creek, CA
-                / .experience-item
-                .content-item.animatable.fadeInDown
-                  %small 2016 - 2017
-                  %h3 Educational Game Developer
-                  %h4 Reaction Learning
-                  %p Madison, WI
-                / .experience-item
-                .content-item.animatable.fadeInDown
-                  %small 2016
-                  %h3 Technical Problem Solver
-                  %h4 Epic Systems
-                  %p Madison, WI
-                .content-item.animatable.fadeInDown
-                  %small 2014 - 2016
-                  %h3 Chemistry / Physics Teacher
-                  %h4 Collier County Public Schools
-                  %p Collier County, FL
-                / .experience-item
-            / .row
-          / .container-fluid
-        / .section-experience
-        %section.section-wrapper.section-education.animatable.fadeInDown
-          .container-fluid
-            .row
-              .col-md-12
-                .section-title
-                  %h2 Education
-            / .row
-            .row
-              .col-md-12
-                .content-item
-                  %small August 2010 - May 2014
-                  %h3 BS Biology, minor: Chemistry 
-                  %h4 Florida State University
-                  %p Tallahassee, FL
-            / .row
-          / .container-fluid
-        / .section-education
-        %section.section-wrapper.section-interest.gray-bg
-          .container-fluid
-            .row
-              .col-md-12
-                .section-title
-                  %h2 Interests
-            / .row
-            .row
-              .profile-img
-                %img.img-responsive.w-100.mb-5{:alt => "", :src => "#{asset_path('profile2.jpg')}"}/ 
-              .col-md-12
-                .content-item.animatable.fadeInDown
-                  %h3 Books
-                  %p
-                    After discovering the wonderful world of audiobooks, I now have a book playing while I am grocery shopping, driving, doing dishes, and working out. A couple books that I have enjoyed recently are "A Connecticut Yankee in King Arthur's Court" by Mark Twain about a time traveler to midevil times, and "Emotional Success: the Power of Gratitude, Compassion, and Pride" by David DeSteno. The latter has been life changing, and is about the benefits of using these 3 emotions to drive our lives, rather than executive functions, because they are more powerful, and create positive feedback loops.
-                .content-item.animatable.fadeInDown
-                  %h3 Sports
-                  %p
-                    I play basketball 6-7 days a week, and consider a shoot-around equivalent to meditation. Any challenge is very welcome! I watch a lot of basketball and football, and play fantasy football as well. If you need an extra player for a league, let me know :)
-                .content-item.animatable.fadeInDown
-                  %h3 Art
-                  %p
-                    I will jump at any excuse to start a craft or an art project, and love to work with new media. My string art created by hammering nails into a decorated wood piece, then wrapping yarn around the nails in a pattern, turned out well. Painting a Game of Thrones character on a bed sheet for a large wall decoration won a small competition. I would really like to improve my digital artwork skills, but so far it is a work in progress. 
-            /.row
-        
+        /           / portfolio-info
+        /         / .portfolio-item
+        /       .col-md-12
+        /         %a.portfolio-item.mb-0.mt-5{'data-toggle'=>"collapse", href: "#collapse2", role: "button", 'aria-expanded'=>"false", 'aria-controls'=>"collapseExample"}
+        /           .portfolio-thumb
+        /             %img{:alt => "", :src => "#{asset_path('solar-panels-1477987_1920.jpg')}"}/
+        /           .portfolio-info
+        /             %h3 Sungrade Sprocket
+        /             %small sungrade-sprocket.herokuapp.com
+        /         #collapse2.collapse
+        /           .card.card-body
+        /             Sungrade was using google sheets to record customer information and progress, and then moved to another management system, but realized it wasn't able to be customized for their needs. The CRM I created for them allowed for the tracking of customers, easy communication between team members, activity auditing, custom email creation and automatic emails, reporting for competitions and commissions, calendars for scheduling appointments, and maps for displaying customer location and scheduling surveyors.
+        /           / portfolio-info
+        /         / .portfolio-item
+        /       .col-md-6
+        /         %a.portfolio-item.mb-0.mt-5{'data-toggle'=>"collapse", href: "#collapse3", role: "button", 'aria-expanded'=>"false", 'aria-controls'=>"collapseExample"}
+        /           .portfolio-thumb
+        /             %img{:alt => "", :src => "#{asset_path('test-214185_1280.jpg')}"}/
+        /           .portfolio-info
+        /             %h3 Reaction
+        /           / portfolio-info
+        /         / .portfolio-item
+        /       .col-md-6
+        /         %a.portfolio-item.mb-0.mt-5{'data-toggle'=>"collapse", href: "#collapse3", role: "button", 'aria-expanded'=>"false", 'aria-controls'=>"collapseExample"}
+        /           .portfolio-thumb
+        /             %img{:alt => "", :src => "#{asset_path('abacus-1866497_1920.jpg')}"}/
+        /           .portfolio-info
+        /             %h3 Deep Sea Monster Math
+        /       #collapse3.collapse
+        /         .card.card-body
+        /           Using Unity and C#, I created a couple educational games. When I was teaching chemistry and physics, I sought after a more engaging was to reach the students. Labs were amazing, but they were only able to happen once, and most chemistry experiments were too dangerous for the classroom. The goal for the Monster Math game was to improve basic arithmetic, and was very similar to Fruit Ninja, where students had to swipe the monsters when their equations were correct. The chemistry game was more challenging, where students had to combine reactant playing cards together to perform different attacks. Truth be told for both of the games, the artwork and animations took a large majority of the time. The programming of the state machine, the input handling, the movement, and the score keeping/ rewards were fairly basic. The most difficult part was creating the tool to handle the reactant cards when they were created. It was a dictionary of sorts, and would recognize different reactant gameobjects and instantiate their products when dropped together.
         %section.section-contact.section-wrapper.gray-bg
           .container-fluid
             .row
@@ -306,6 +334,35 @@
                 / .feedback-form
           / .container-fluid
         / .section-contact
+        
+        %section.section-wrapper.section-interest.gray-bg
+          .container-fluid
+            .row
+              .col-md-12
+                .section-title
+                  %h2 Interests
+            / .row
+            .row.flex-row
+              .profile-img.mb-5
+                %img.img-responsive{:alt => "", :src => "#{asset_path('profile2.jpg')}", :style => "width: 45%"}
+                %img.img-responsive{:alt => "", :src => "#{asset_path('Me_in_front_of_waves.jpg')}", :style => "width: 45%"}
+            .row
+              .col-md-12
+                .content-item.animatable.fadeInDown
+                  %h3 Books
+                  %p
+                    After discovering the wonderful world of audiobooks, I now have a book playing while I am grocery shopping, driving, doing dishes, and working out. A couple books that I have enjoyed recently are "A Connecticut Yankee in King Arthur's Court" by Mark Twain about a time traveler to midevil times, and "Emotional Success: the Power of Gratitude, Compassion, and Pride" by David DeSteno. The latter has been life changing, and is about the benefits of using these 3 emotions to drive our lives, rather than executive functions, because they are more powerful, and create positive feedback loops.
+                .content-item.animatable.fadeInDown
+                  %h3 Sports
+                  %p
+                    I play basketball 6-7 days a week, and consider a shoot-around equivalent to meditation. Any challenge is very welcome! I watch a lot of basketball and football, and play fantasy football as well. If you need an extra player for a league, let me know :)
+                .content-item.animatable.fadeInDown
+                  %h3 Art
+                  %p
+                    I will jump at any excuse to start a craft or an art project, and love to work with new media. My string art created by hammering nails into a decorated wood piece, then wrapping yarn around the nails in a pattern, turned out well. Painting a Game of Thrones character on a bed sheet for a large wall decoration won a small competition. I would really like to improve my digital artwork skills, but so far it is a work in progress. 
+            /.row
+        
+        
         %footer.footer
           .copyright-section
             .container-fluid
@@ -321,28 +378,3 @@
       / Sticky
     / .right-col-block
   / .columns-block
-
-:javascript
-  $('#submit_email').click(function(){
-    if(blank_field_found()){
-      alert('Please fill out all of the fields before submitting')
-      return
-    }
-    $('#contactForm').submit()
-    alert('Thank you for getting in touch! I will get back to you as soon as possible.')
-    $('#email_name').val('')
-    $('#email_from').val('')
-    $('#email_subject').val('')
-    $('#email_message').val('')
-  })
-
-  function blank_field_found(){
-    name = $('#email_name').val()
-    from = $('#email_from').val()
-    subject = $('#email_subject').val()
-    message = $('#email_message').val()
-    if([name, from, subject, message].indexOf('') > 0){ // a blank is found
-      return true
-    }
-    return false
-  }
