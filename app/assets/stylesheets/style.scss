@@ -273,6 +273,10 @@ button:focus {
   position: relative;
   .profile-img {
     margin-bottom: 50px;
+
+    img {
+      height: 100%;
+    }
   }
   .content-wrapper {}
   .content {
@@ -720,7 +724,7 @@ button:focus {
 }
 
 ul {
-  list-style-image: url('checkmark.png');
+  list-style-image: asset-url('checkmark.png');
 
   li {
     margin-top: 20px;
